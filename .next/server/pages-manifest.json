@@ -2,5 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/pokemon/[id]": "pages/pokemon/[id].js"
+  "/pokemon/list": "pages/pokemon/list.js"
 }

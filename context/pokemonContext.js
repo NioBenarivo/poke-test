@@ -1,8 +1,13 @@
+import * as React from 'react'
+
 const CAPTURE_POKEMON = 'CAPTURE_POKEMON';
 const RELEASE_POKEMON = 'RELEASE_POKEMON';
+const ADD_OFFSET = 'ADD_OFFSET';
+const ADD_POKEMON_LIST = 'ADD_POKEMON_LIST';
 
 const PokemonContext = React.createContext()
 const initialState = {
+  offsetPage: 0,
   pokemonList: [],
   capturedPokemon: [],
 }
@@ -27,7 +32,22 @@ function getLocalStorage(key, initialValue) {
 
 function pokemonReducer(state = initialState, action) {
   switch (action.type) {
-    case 'CAPTURE_POKEMON': {
+    case ADD_OFFSET: {
+      return {
+        ...state,
+        offsetPage: state.offsetPage + action.value
+      }
+    }
+    case ADD_POKEMON_LIST: {
+      return {
+        ...state,
+        pokemonList: [
+          ...state.pokemonList,
+          ...action.value
+        ]
+      }
+    }
+    case CAPTURE_POKEMON: {
       return {
         ...state,
         capturedPokemon: [
@@ -36,11 +56,12 @@ function pokemonReducer(state = initialState, action) {
         ]
       }
     }
-    case 'RELEASE_POKEMON': {
+    case RELEASE_POKEMON: {
+      const filteredArray = state.capturedPokemon.filter(poke => poke.nickname !== action.value.nickname);
       return {
         ...state,
         capturedPokemon: [
-          ...state.capturedPokemon
+          ...filteredArray
         ]
       }
     }
@@ -51,7 +72,6 @@ function pokemonReducer(state = initialState, action) {
 }
 
 function PokemonProvider({children}) {
-  // const [state, dispatch] = React.useReducer(pokemonReducer, initialState)
   const [state, dispatch] = React.useReducer(pokemonReducer, getLocalStorage("pokemon", initialState))
 
   React.useEffect(() => {
@@ -74,5 +94,7 @@ export {
   PokemonProvider, 
   usePokemon,
   CAPTURE_POKEMON,
-  RELEASE_POKEMON
+  RELEASE_POKEMON,
+  ADD_OFFSET,
+  ADD_POKEMON_LIST
 }
