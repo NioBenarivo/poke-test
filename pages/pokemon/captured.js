@@ -17,7 +17,8 @@ export default function PokemonList() {
     <div className={section}>
       <Navigation />
       <div className={pokemonWrapper}>
-        {capturedPokemon.map((pokemon, index) => {
+        {capturedPokemon.length === 0 && <h2>No Pokemon Captured</h2>}
+        {capturedPokemon.length > 0 && capturedPokemon.map((pokemon, index) => {
           return (
             <PokemonCard 
               key={`pokemon-${index}`}
