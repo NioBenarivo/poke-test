@@ -4,7 +4,8 @@ export const dialogClass = css`
   display: block;
   z-index: 1110;
   opacity: 1;
-  min-width: 480px;
+  min-width: 240px;
+  max-width: 480px;
   background-color: #FFFFFF;
   position: fixed;
   top: 50%;

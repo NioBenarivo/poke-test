@@ -1,67 +1,64 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (function() {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 4107:
+/***/ "./apollo-client.js":
+/*!**************************!*\
+  !*** ./apollo-client.js ***!
+  \**************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ _app; }
-});
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(5282);
-// EXTERNAL MODULE: external "@apollo/client"
-var client_ = __webpack_require__(8074);
-;// CONCATENATED MODULE: ./apollo-client.js
-// ./apollo-client.js
-
-const client = new client_.ApolloClient({
-  // uri: "https://countries.trevorblades.com",
-  uri: "https://beta.pokeapi.co/graphql/v1beta",
-  cache: new client_.InMemoryCache()
-});
-/* harmony default export */ var apollo_client = (client);
-// EXTERNAL MODULE: ./context/pokemonContext.js
-var pokemonContext = __webpack_require__(8599);
-;// CONCATENATED MODULE: ./pages/_app.js
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-function MyApp({
-  Component,
-  pageProps
-}) {
-  return /*#__PURE__*/jsx_runtime_.jsx(client_.ApolloProvider, {
-    client: apollo_client,
-    children: /*#__PURE__*/jsx_runtime_.jsx(pokemonContext/* PokemonProvider */.d0, {
-      children: /*#__PURE__*/jsx_runtime_.jsx(Component, _objectSpread({}, pageProps))
-    })
-  });
-}
-
-/* harmony default export */ var _app = (MyApp);
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @apollo/client */ \"@apollo/client\");\n/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_apollo_client__WEBPACK_IMPORTED_MODULE_0__);\n// ./apollo-client.js\n\nconst client = new _apollo_client__WEBPACK_IMPORTED_MODULE_0__.ApolloClient({\n  // uri: \"https://countries.trevorblades.com\",\n  uri: \"https://beta.pokeapi.co/graphql/v1beta\",\n  cache: new _apollo_client__WEBPACK_IMPORTED_MODULE_0__.InMemoryCache()\n});\n/* harmony default export */ __webpack_exports__[\"default\"] = (client);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wb2tlLy4vYXBvbGxvLWNsaWVudC5qcz8yM2Q4Il0sIm5hbWVzIjpbImNsaWVudCIsIkFwb2xsb0NsaWVudCIsInVyaSIsImNhY2hlIiwiSW5NZW1vcnlDYWNoZSJdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7QUFFQTtBQUVBLE1BQU1BLE1BQU0sR0FBRyxJQUFJQyx3REFBSixDQUFpQjtBQUM1QjtBQUNBQyxLQUFHLEVBQUUsd0NBRnVCO0FBRzVCQyxPQUFLLEVBQUUsSUFBSUMseURBQUo7QUFIcUIsQ0FBakIsQ0FBZjtBQU1BLCtEQUFlSixNQUFmIiwiZmlsZSI6Ii4vYXBvbGxvLWNsaWVudC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIC4vYXBvbGxvLWNsaWVudC5qc1xuXG5pbXBvcnQgeyBBcG9sbG9DbGllbnQsIEluTWVtb3J5Q2FjaGUgfSBmcm9tIFwiQGFwb2xsby9jbGllbnRcIjtcblxuY29uc3QgY2xpZW50ID0gbmV3IEFwb2xsb0NsaWVudCh7XG4gICAgLy8gdXJpOiBcImh0dHBzOi8vY291bnRyaWVzLnRyZXZvcmJsYWRlcy5jb21cIixcbiAgICB1cmk6IFwiaHR0cHM6Ly9iZXRhLnBva2VhcGkuY28vZ3JhcGhxbC92MWJldGFcIixcbiAgICBjYWNoZTogbmV3IEluTWVtb3J5Q2FjaGUoKSxcbn0pO1xuXG5leHBvcnQgZGVmYXVsdCBjbGllbnQ7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./apollo-client.js\n");
 
 /***/ }),
 
-/***/ 8074:
+/***/ "./context/pokemonContext.js":
+/*!***********************************!*\
+  !*** ./context/pokemonContext.js ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"PokemonProvider\": function() { return /* binding */ PokemonProvider; },\n/* harmony export */   \"usePokemon\": function() { return /* binding */ usePokemon; },\n/* harmony export */   \"CAPTURE_POKEMON\": function() { return /* binding */ CAPTURE_POKEMON; },\n/* harmony export */   \"RELEASE_POKEMON\": function() { return /* binding */ RELEASE_POKEMON; },\n/* harmony export */   \"ADD_OFFSET\": function() { return /* binding */ ADD_OFFSET; },\n/* harmony export */   \"ADD_POKEMON_LIST\": function() { return /* binding */ ADD_POKEMON_LIST; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\nvar _jsxFileName = \"/Users/zunio/Documents/Projects/poke-test/context/pokemonContext.js\";\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\nconst CAPTURE_POKEMON = 'CAPTURE_POKEMON';\nconst RELEASE_POKEMON = 'RELEASE_POKEMON';\nconst ADD_OFFSET = 'ADD_OFFSET';\nconst ADD_POKEMON_LIST = 'ADD_POKEMON_LIST';\nconst PokemonContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createContext();\nconst initialState = {\n  offsetPage: 0,\n  pokemonList: [],\n  capturedPokemon: []\n};\n\nfunction setLocalStorage(key, value) {\n  try {\n    window.localStorage.setItem(key, JSON.stringify(value));\n  } catch (e) {\n    console.log(e);\n  }\n}\n\nfunction getLocalStorage(key, initialValue) {\n  try {\n    const value = window.localStorage.getItem(key);\n    return value ? JSON.parse(value) : initialValue;\n  } catch (e) {\n    // if error, return initial value\n    return initialValue;\n  }\n}\n\nfunction pokemonReducer(state = initialState, action) {\n  switch (action.type) {\n    case ADD_OFFSET:\n      {\n        return _objectSpread(_objectSpread({}, state), {}, {\n          offsetPage: state.offsetPage + action.value\n        });\n      }\n\n    case ADD_POKEMON_LIST:\n      {\n        return _objectSpread(_objectSpread({}, state), {}, {\n          pokemonList: [...state.pokemonList, ...action.value]\n        });\n      }\n\n    case CAPTURE_POKEMON:\n      {\n        return _objectSpread(_objectSpread({}, state), {}, {\n          capturedPokemon: [...state.capturedPokemon, action.value]\n        });\n      }\n\n    case RELEASE_POKEMON:\n      {\n        const filteredArray = state.capturedPokemon.filter(poke => poke.nickname !== action.value.nickname);\n        return _objectSpread(_objectSpread({}, state), {}, {\n          capturedPokemon: [...filteredArray]\n        });\n      }\n\n    default:\n      {\n        throw new Error(`Unhandled action type: ${action.type}`);\n      }\n  }\n}\n\nfunction PokemonProvider({\n  children\n}) {\n  const [state, dispatch] = react__WEBPACK_IMPORTED_MODULE_1__.useReducer(pokemonReducer, getLocalStorage(\"pokemon\", initialState));\n  react__WEBPACK_IMPORTED_MODULE_1__.useEffect(() => {\n    setLocalStorage(\"pokemon\", state);\n  }, [state]);\n  const value = {\n    state,\n    dispatch\n  };\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(PokemonContext.Provider, {\n    value: value,\n    children: children\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 82,\n    columnNumber: 10\n  }, this);\n}\n\nfunction usePokemon() {\n  const context = react__WEBPACK_IMPORTED_MODULE_1__.useContext(PokemonContext);\n\n  if (context === undefined) {\n    throw new Error('usePokemon must be used within a PokemonProvider');\n  }\n\n  return context;\n}\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wb2tlLy4vY29udGV4dC9wb2tlbW9uQ29udGV4dC5qcz85MjllIl0sIm5hbWVzIjpbIkNBUFRVUkVfUE9LRU1PTiIsIlJFTEVBU0VfUE9LRU1PTiIsIkFERF9PRkZTRVQiLCJBRERfUE9LRU1PTl9MSVNUIiwiUG9rZW1vbkNvbnRleHQiLCJSZWFjdCIsImluaXRpYWxTdGF0ZSIsIm9mZnNldFBhZ2UiLCJwb2tlbW9uTGlzdCIsImNhcHR1cmVkUG9rZW1vbiIsInNldExvY2FsU3RvcmFnZSIsImtleSIsInZhbHVlIiwid2luZG93IiwibG9jYWxTdG9yYWdlIiwic2V0SXRlbSIsIkpTT04iLCJzdHJpbmdpZnkiLCJlIiwiY29uc29sZSIsImxvZyIsImdldExvY2FsU3RvcmFnZSIsImluaXRpYWxWYWx1ZSIsImdldEl0ZW0iLCJwYXJzZSIsInBva2Vtb25SZWR1Y2VyIiwic3RhdGUiLCJhY3Rpb24iLCJ0eXBlIiwiZmlsdGVyZWRBcnJheSIsImZpbHRlciIsInBva2UiLCJuaWNrbmFtZSIsIkVycm9yIiwiUG9rZW1vblByb3ZpZGVyIiwiY2hpbGRyZW4iLCJkaXNwYXRjaCIsInVzZVBva2Vtb24iLCJjb250ZXh0IiwidW5kZWZpbmVkIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFFQSxNQUFNQSxlQUFlLEdBQUcsaUJBQXhCO0FBQ0EsTUFBTUMsZUFBZSxHQUFHLGlCQUF4QjtBQUNBLE1BQU1DLFVBQVUsR0FBRyxZQUFuQjtBQUNBLE1BQU1DLGdCQUFnQixHQUFHLGtCQUF6QjtBQUVBLE1BQU1DLGNBQWMsZ0JBQUdDLGdEQUFBLEVBQXZCO0FBQ0EsTUFBTUMsWUFBWSxHQUFHO0FBQ25CQyxZQUFVLEVBQUUsQ0FETztBQUVuQkMsYUFBVyxFQUFFLEVBRk07QUFHbkJDLGlCQUFlLEVBQUU7QUFIRSxDQUFyQjs7QUFNQSxTQUFTQyxlQUFULENBQXlCQyxHQUF6QixFQUE4QkMsS0FBOUIsRUFBcUM7QUFDbkMsTUFB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Q29udGVudCI6WyJpbXBvcnQgKiBhcyBSZWFjdCBmcm9tICdyZWFjdCdcblxuY29uc3QgQ0FQVFVSRV9QT0tFTU9OID0gJ0NBUFRVUkVfUE9LRU1PTic7XG5jb25zdCBSRUxFQVNFX1BPS0VNT04gPSAnUkVMRUFTRV9QT0tFTU9OJztcbmNvbnN0IEFERF9PRkZTRVQgPSAnQUREX09GRlNFVCc7XG5jb25zdCBBRERfUE9LRU1PTl9MSVNUID0gJ0FERF9QT0tFTU9OX0xJU1QnO1xuXG5jb25zdCBQb2tlbW9uQ29udGV4dCA9IFJlYWN0LmNyZWF0ZUNvbnRleHQoKVxuY29uc3QgaW5pdGlhbFN0YXRlID0ge1xuICBvZmZzZXRQYWdlOiAwLFxuICBwb2tlbW9uTGlzdDogW10sXG4gIGNhcHR1cmVkUG9rZW1vbjogW10sXG59XG5cbmZ1bmN0aW9uIHNldExvY2FsU3RvcmFnZShrZXksIHZhbHVlKSB7XG4gIHRyeSB7XG4gICAgd2luZG93LmxvY2FsU3RvcmFnZS5zZXRJdGVtKGtleSwgSlNPTi5zdHJpbmdpZnkodmFsdWUpKTtcbiAgfSBjYXRjaCAoZSkge1xuICAgIGNvbnNvbGUubG9nKGUpO1xuICB9XG59XG5cbmZ1bmN0aW9uIGdldExvY2FsU3RvcmFnZShrZXksIGluaXRpYWxWYWx1ZSkge1xuICB0cnkge1xuICAgIGNvbnN0IHZhbHVlID0gd2luZG93LmxvY2FsU3RvcmFnZS5nZXRJdGVtKGtleSk7XG4gICAgcmV0dXJuIHZhbHVlID8gSlNPTi5wYXJzZSh2YWx1ZSkgOiBpbml0aWFsVmFsdWU7XG4gIH0gY2F0Y2ggKGUpIHtcbiAgICAvLyBpZiBlcnJvciwgcmV0dXJuIGluaXRpYWwgdmFsdWVcbiAgICByZXR1cm4gaW5pdGlhbFZhbHVlO1xuICB9XG59XG5cbmZ1bmN0aW9uIHBva2Vtb25SZWR1Y2VyKHN0YXRlID0gaW5pdGlhbFN0YXRlLCBhY3Rpb24pIHtcbiAgc3dpdGNoIChhY3Rpb24udHlwZSkge1xuICAgIGNhc2UgQUREX09GRlNFVDoge1xuICAgICAgcmV0dXJuIHtcbiAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgIG9mZnNldFBhZ2U6IHN0YXRlLm9mZnNldFBhZ2UgKyBhY3Rpb24udmFsdWVcbiAgICAgIH1cbiAgICB9XG4gICAgY2FzZSBBRERfUE9LRU1PTl9MSVNUOiB7XG4gICAgICByZXR1cm4ge1xuICAgICAgICAuLi5zdGF0ZSxcbiAgICAgICAgcG9rZW1vbkxpc3Q6IFtcbiAgICAgICAgICAuLi5zdGF0ZS5wb2tlbW9uTGlzdCxcbiAgICAgICAgICAuLi5hY3Rpb24udmFsdWVcbiAgICAgICAgXVxuICAgICAgfVxuICAgIH1cbiAgICBjYXNlIENBUFRVUkVfUE9LRU1PTjoge1xuICAgICAgcmV0dXJuIHtcbiAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgIGNhcHR1cmVkUG9rZW1vbjogW1xuICAgICAgICAgIC4uLnN0YXRlLmNhcHR1cmVkUG9rZW1vbixcbiAgICAgICAgICBhY3Rpb24udmFsdWVcbiAgICAgICAgXVxuICAgICAgfVxuICAgIH1cbiAgICBjYXNlIFJFTEVBU0VfUE9LRU1PTjoge1xuICAgICAgY29uc3QgZmlsdGVyZWRBcnJheSA9IHN0YXRlLmNhcHR1cmVkUG9rZW1vbi5maWx0ZXIocG9rZSA9PiBwb2tlLm5pY2tuYW1lICE9PSBhY3Rpb24udmFsdWUubmlja25hbWUpO1xuICAgICAgcmV0dXJuIHtcbiAgICAgICAgLi4uc3RhdGUsXG4gICAgICAgIGNhcHR1cmVkUG9rZW1vbjogW1xuICAgICAgICAgIC4uLmZpbHRlcmVkQXJyYXlcbiAgICAgICAgXVxuICAgICAgfVxuICAgIH1cbiAgICBkZWZhdWx0OiB7XG4gICAgICB0aHJvdyBuZXcgRXJyb3IoYFVuaGFuZGxlZCBhY3Rpb24gdHlwZTogJHthY3Rpb24udHlwZX1gKVxuICAgIH1cbiAgfVxufVxuXG5mdW5jdGlvbiBQb2tlbW9uUHJvdmlkZXIoe2NoaWxkcmVufSkge1xuICBjb25zdCBbc3RhdGUsIGRpc3BhdGNoXSA9IFJlYWN0LnVzZVJlZHVjZXIocG9rZW1vblJlZHVjZXIsIGdldExvY2FsU3RvcmFnZShcInBva2Vtb25cIiwgaW5pdGlhbFN0YXRlKSlcblxuICBSZWFjdC51c2VFZmZlY3QoKCkgPT4ge1xuICAgIHNldExvY2FsU3RvcmFnZShcInBva2Vtb25cIiwgc3RhdGUpO1xuICB9LCBbc3RhdGVdKTtcbiAgXG4gIGNvbnN0IHZhbHVlID0ge3N0YXRlLCBkaXNwYXRjaH1cbiAgcmV0dXJuIDxQb2tlbW9uQ29udGV4dC5Qcm92aWRlciB2YWx1ZT17dmFsdWV9PntjaGlsZHJlbn08L1Bva2Vtb25Db250ZXh0LlByb3ZpZGVyPlxufVxuXG5mdW5jdGlvbiB1c2VQb2tlbW9uKCkge1xuICBjb25zdCBjb250ZXh0ID0gUmVhY3QudXNlQ29udGV4dChQb2tlbW9uQ29udGV4dClcbiAgaWYgKGNvbnRleHQgPT09IHVuZGVmaW5lZCkge1xuICAgIHRocm93IG5ldyBFcnJvcigndXNlUG9rZW1vbiBtdXN0IGJlIHVzZWQgd2l0aGluIGEgUG9rZW1vblByb3ZpZGVyJylcbiAgfVxuICByZXR1cm4gY29udGV4dFxufVxuXG5leHBvcnQge1xuICBQb2tlbW9uUHJvdmlkZXIsIFxuICB1c2VQb2tlbW9uLFxuICBDQVBUVVJFX1BPS0VNT04sXG4gIFJFTEVBU0VfUE9LRU1PTixcbiAgQUREX09GRlNFVCxcbiAgQUREX1BPS0VNT05fTElTVFxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./context/pokemonContext.js\n");
+
+/***/ }),
+
+/***/ "./pages/_app.js":
+/*!***********************!*\
+  !*** ./pages/_app.js ***!
+  \***********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/globals.css */ \"./styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @apollo/client */ \"@apollo/client\");\n/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_apollo_client__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../apollo-client */ \"./apollo-client.js\");\n/* harmony import */ var _context_pokemonContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @context/pokemonContext */ \"./context/pokemonContext.js\");\n\nvar _jsxFileName = \"/Users/zunio/Documents/Projects/poke-test/pages/_app.js\";\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nfunction MyApp({\n  Component,\n  pageProps\n}) {\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_apollo_client__WEBPACK_IMPORTED_MODULE_2__.ApolloProvider, {\n    client: _apollo_client__WEBPACK_IMPORTED_MODULE_3__.default,\n    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_context_pokemonContext__WEBPACK_IMPORTED_MODULE_4__.PokemonProvider, {\n      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, _objectSpread({}, pageProps), void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 10,\n        columnNumber: 9\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 9,\n      columnNumber: 7\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 8,\n    columnNumber: 5\n  }, this);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (MyApp);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wb2tlLy4vcGFnZXMvX2FwcC5qcz9kNTMwIl0sIm5hbWVzIjpbIk15QXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwiY2xpZW50Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQSxTQUFTQSxLQUFULENBQWU7QUFBRUMsV0FBRjtBQUFhQztBQUFiLENBQWYsRUFBeUM7QUFDdkMsc0JBQ0UsOERBQUMsMERBQUQ7QUFBZ0IsVUFBTSxFQUFFQyxtREFBeEI7QUFBQSwyQkFDRSw4REFBQyxvRUFBRDtBQUFBLDZCQUNFLDhEQUFDLFNBQUQsb0JBQWVELFNBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUFPRDs7QUFFRCwrREFBZUYsS0FBZiIsImZpbGUiOiIuL3BhZ2VzL19hcHAuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgJy4uL3N0eWxlcy9nbG9iYWxzLmNzcydcbmltcG9ydCB7IEFwb2xsb1Byb3ZpZGVyIH0gZnJvbSBcIkBhcG9sbG8vY2xpZW50XCI7XG5pbXBvcnQgY2xpZW50IGZyb20gXCIuLi9hcG9sbG8tY2xpZW50XCI7XG5pbXBvcnQgeyBQb2tlbW9uUHJvdmlkZXIgfSBmcm9tICdAY29udGV4dC9wb2tlbW9uQ29udGV4dCc7XG5cbmZ1bmN0aW9uIE15QXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfSkge1xuICByZXR1cm4gKFxuICAgIDxBcG9sbG9Qcm92aWRlciBjbGllbnQ9e2NsaWVudH0+XG4gICAgICA8UG9rZW1vblByb3ZpZGVyPlxuICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XG4gICAgICA8L1Bva2Vtb25Qcm92aWRlcj5cbiAgICA8L0Fwb2xsb1Byb3ZpZGVyPlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBNeUFwcFxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
+
+/***/ }),
+
+/***/ "./styles/globals.css":
+/*!****************************!*\
+  !*** ./styles/globals.css ***!
+  \****************************/
+/***/ (function() {
+
+
+
+/***/ }),
+
+/***/ "@apollo/client":
+/*!*********************************!*\
+  !*** external "@apollo/client" ***!
+  \*********************************/
 /***/ (function(module) {
 
 "use strict";
@@ -69,7 +66,10 @@ module.exports = require("@apollo/client");;
 
 /***/ }),
 
-/***/ 9297:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ (function(module) {
 
 "use strict";
@@ -77,11 +77,14 @@ module.exports = require("react");;
 
 /***/ }),
 
-/***/ 5282:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ (function(module) {
 
 "use strict";
-module.exports = require("react/jsx-runtime");;
+module.exports = require("react/jsx-dev-runtime");;
 
 /***/ })
 
@@ -92,7 +95,7 @@ module.exports = require("react/jsx-runtime");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, [599], function() { return __webpack_exec__(4107); });
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.js"));
 module.exports = __webpack_exports__;
 
 })();
