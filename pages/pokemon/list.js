@@ -8,7 +8,7 @@ import Navigation from '@components/Navigation';
 import ErrorPage from '@components/ErrorPage';
 import Loader from '@components/Loader';
 import { section, pokemonWrapper } from '@styles/pokemonStyles';
-import { QUERY_POKEMON_LIST } from './graphql';
+import { QUERY_POKEMON_LIST } from '@queries/index';
 
 export default function PokemonList() {
   const { state: { capturedPokemon } } = usePokemon();

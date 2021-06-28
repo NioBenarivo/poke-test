@@ -1,6 +1,11 @@
 {
   "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
+  "/pokemon/[id]": "pages/pokemon/[id].html",
+  "/pokemon/captured": "pages/pokemon/captured.html",
+  "/pokemon/list": "pages/pokemon/list.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/pokemon/list": "pages/pokemon/list.js"
+  "/404": "pages/404.html"
 }

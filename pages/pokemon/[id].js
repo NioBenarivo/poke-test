@@ -25,7 +25,7 @@ import {
   spaceBetween,
 } from '@styles/pokemonStyles';
 import { mr05, mr1 } from '@components/PokemonCard/styles';
-import { QUERY_POKEMON_DETAILS } from './graphql';
+import { QUERY_POKEMON_DETAILS } from '@queries/index';
 
 export default function PokemonList() {
   const { dispatch, state: { capturedPokemon } } = usePokemon()

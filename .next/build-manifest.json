@@ -1,33 +1,58 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/zIdhSuL6_mju-31tFrEsc/_buildManifest.js",
+    "static/zIdhSuL6_mju-31tFrEsc/_ssgManifest.js"
   ],
   "pages": {
+    "/": [
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-92300432a1172ef1338b.js",
+      "static/chunks/main-9fa3b3cc6b02e2e4d87e.js",
+      "static/css/ea6f1f42cebc7b8cbe53.css",
+      "static/chunks/pages/index-7fca28c46d4a3cff225c.js"
+    ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-92300432a1172ef1338b.js",
+      "static/chunks/main-9fa3b3cc6b02e2e4d87e.js",
+      "static/css/4ffc156877a227626314.css",
+      "static/chunks/pages/_app-333d4bc4d32e99c3591a.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-92300432a1172ef1338b.js",
+      "static/chunks/main-9fa3b3cc6b02e2e4d87e.js",
+      "static/chunks/pages/_error-9faf4177fb4e528b4124.js"
+    ],
+    "/pokemon/[id]": [
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-92300432a1172ef1338b.js",
+      "static/chunks/main-9fa3b3cc6b02e2e4d87e.js",
+      "static/chunks/897-9cddb01e00a82bc5650a.js",
+      "static/chunks/527-2ae1d3f971c22c99ccc2.js",
+      "static/chunks/pages/pokemon/[id]-3bcc51e12f71566f9442.js"
+    ],
+    "/pokemon/captured": [
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-92300432a1172ef1338b.js",
+      "static/chunks/main-9fa3b3cc6b02e2e4d87e.js",
+      "static/chunks/897-9cddb01e00a82bc5650a.js",
+      "static/chunks/827-7436839ace5c1f7dd9c2.js",
+      "static/chunks/pages/pokemon/captured-a8f97c34c82cdc1a0ed6.js"
     ],
     "/pokemon/list": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/pokemon/list.js"
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-92300432a1172ef1338b.js",
+      "static/chunks/main-9fa3b3cc6b02e2e4d87e.js",
+      "static/chunks/897-9cddb01e00a82bc5650a.js",
+      "static/chunks/527-2ae1d3f971c22c99ccc2.js",
+      "static/chunks/827-7436839ace5c1f7dd9c2.js",
+      "static/chunks/pages/pokemon/list-690c92bd0098b01ce6f9.js"
     ]
   },
   "ampFirstPages": []
