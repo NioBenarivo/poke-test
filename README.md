@@ -13,3 +13,6 @@ yarn dev
 Pokemon List: [http://localhost:3000/pokemon/list](http://localhost:3000/pokemon/list) 
 Pokemon Details: [http://localhost:3000/pokemon/list](http://localhost:3000/pokemon/details) 
 Pokemon Captured: [http://localhost:3000/pokemon/list](http://localhost:3000/pokemon/captured) 
+
+## Domain
+[https://poke-test.vercel.app/](https://poke-test.vercel.app/)
